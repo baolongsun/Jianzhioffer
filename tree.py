@@ -34,7 +34,7 @@ if __name__  == "__main__":
     t3 = TreeNode(3)
     t4 = TreeNode(4)
     t1.left = t2;t1.right = t3
-    t3.left = t4
+    t2.left = t4
     preorderTraversal(t1);print('*'*10)
     inorderTraversal(t1);print('*'*10)
     postorderTraversal(t1);print('*'*10)
