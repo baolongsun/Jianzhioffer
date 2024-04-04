@@ -25,6 +25,7 @@ def pathSum(root,target):
         tmp.pop()
     dsf(root,target)
     return res
+
 if __name__ == "__main__":
     T1 = TreeNode(1)
     T2 = TreeNode(2)
