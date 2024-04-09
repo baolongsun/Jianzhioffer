@@ -18,7 +18,7 @@ def getIntersectionNode(headA,headB):
         A = A.next if A else headB
         B = B.next if B else headA
 
-    return A.val
+    return A
 
 if __name__ == "__main__":
     n1 = Node(1)
@@ -26,8 +26,10 @@ if __name__ == "__main__":
     n3 = Node(3)
     n4 = Node(4)
     n5 = Node(5)
+    n6 = Node(6)
     n1.next = n2
     n2.next = n4
-    n3.next = n4
+    n3.next = n6
     n4.next = n5
-    print(getIntersectionNode(n1,n3))
+    intersection = getIntersectionNode(n1,n3)
+    print(intersection.val) if intersection else print('')
